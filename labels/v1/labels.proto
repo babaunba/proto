@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package labels.v1;
+package gen.proto.labels.v1;
 
 import "google/api/annotations.proto";
 
