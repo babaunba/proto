@@ -4,7 +4,7 @@ package labels.v1;
 
 import "google/api/annotations.proto";
 
-option go_package = "labels.v1;labels";
+option go_package = "gen/proto/labels/v1;labels";
 
 service Labels {
   rpc GetLabels(GetLabelsRequest) returns (GetLabelsResponse) {
