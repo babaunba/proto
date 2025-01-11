@@ -17,7 +17,8 @@ service Labels {
 
 message GetLabelsRequest {
   string title = 1;
-  string content = 2;
+  string body = 2;
+  repeated string labels = 3;
 }
 
 message GetLabelsResponse {
