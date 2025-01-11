@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package labels.v1;
+
+import "google/api/annotations.proto";
+
+option go_package = "labels.v1;labels";
+
+service Labels {
+  rpc GetLabels(GetLabelsRequest) returns (GetLabelsResponse) {
+    option (google.api.http) = {
+      post: "/get-labels"
+      body: "*"
+    };
+  }
+}
+
+message GetLabelsRequest {
+  string title = 1;
+  string content = 2;
+}
+
+message GetLabelsResponse {
+  repeated string tags = 1;
+}
