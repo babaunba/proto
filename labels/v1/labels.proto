@@ -19,6 +19,7 @@ message GetLabelsRequest {
   string title = 1;
   string body = 2;
   repeated string labels = 3;
+  string creator = 4;
 }
 
 message GetLabelsResponse {
